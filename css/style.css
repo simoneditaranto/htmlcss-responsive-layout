@@ -88,8 +88,42 @@ header .container{
     border: 1px dotted purple;
     /* test */
 }
-
 /* fine sezione header */
+
+
+
+/* sezione "strategic planning" */
+
+#strategic-planning{
+    margin-bottom: 65px;
+
+    background-color: #9792E4;
+}
+
+#strategic-planning .container{
+    display: flex;
+    flex-direction: column;
+}
+
+#planning{
+    border: 1px dotted purple;
+    /* test */
+
+    margin-top: 70px;
+    margin-bottom: 35px;
+}
+
+#app-development{
+    border: 1px dotted purple;
+    /* test */
+
+    margin-bottom: 65px;
+
+    background-color: #FFFFFF;
+}
+
+/* fine sezione "strategic planning" */
+
 
 
 
@@ -116,6 +150,10 @@ header .container{
         flex-grow: 2; 
     }
 
+    #planning{
+        margin-top: 140px;
+    }
+
 }
 /* fine soluzione tablet */
 
@@ -130,14 +168,26 @@ header .container{
         justify-content: space-around;
     }
 
-}
+    #strategic-planning .container{
+        flex-direction: row;
+        justify-content: center;
+        gap: 90px;
+    }
 
+    #planning{
+        margin-bottom: 0;
+    }
+
+    #app-development{
+        margin-top: 305px;
+    }
+
+}
 /* soluzione laptop */
 
 
 
 /* soluzione desktop */
-
 @media screen and (min-width: 1200px) {
 
     .container{
@@ -145,7 +195,6 @@ header .container{
     }
 
 }
-
 /* soluzione desktop */
 
 
