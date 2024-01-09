@@ -10,8 +10,10 @@
 /* elementi comuni a tutta la pagina */
 .container{
     border: 1px dotted black;
-    margin: 0 30px;
+    padding: 0 30px;
     /* test */
+
+    margin: auto;
 }
 /* fine elementi comuni a tutta la pagina */
 
@@ -67,6 +69,11 @@ header .container{
     border: 1px dotted red;
     /* test */
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
     background-color: #B5DDFF;
 }
 
@@ -83,5 +90,65 @@ header .container{
 }
 
 /* fine sezione header */
+
+
+
+
+
+
+/* sezione responsive */
+
+/* soluzione tablet */
+@media screen and (min-width: 768px) {
+
+    header .container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .card{
+        width: calc(100% / 3 - 25px / 3 * 2);
+    }
+
+    header .container .card:nth-of-type(1){
+        width: calc(100% / 2 - 25px / 3 * 2);
+        flex-grow: 2; 
+    }
+
+}
+/* fine soluzione tablet */
+
+
+/* soluzione laptop */
+
+@media screen and (min-width: 992px) {
+
+
+    header .container .card:nth-of-type(1){
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+}
+
+/* soluzione laptop */
+
+
+
+/* soluzione desktop */
+
+@media screen and (min-width: 1200px) {
+
+    .container{
+        max-width: 1140px;
+    }
+
+}
+
+/* soluzione desktop */
+
+
+
 
 
