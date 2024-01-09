@@ -132,7 +132,7 @@ header .container{
 }
 
 
-section .container > div {
+#testimonials .container > div {
     border: 1px solid violet;
     /* test */
 }
@@ -170,8 +170,35 @@ section .container > div {
     background-color: grey;
     /* test */
 }
-
 /* fine sezione "testimonials" */
+
+
+
+/* sezione "with-us" */
+
+#with-us{
+    margin-bottom: 90px;
+
+    background-color: #9792E4;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    margin-bottom: 70px;
+}
+
+.row .col{
+    height: 50px;
+    background-color: white;
+    border: 1px dotted green;
+    /* test */
+}
+
+/* fine sezione "with-us" */
+
 
 
 
@@ -208,6 +235,16 @@ section .container > div {
         flex-direction: row;
     }
 
+    .row{
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .row .col{
+        width: calc(100% / 2 - 30px);
+    }
+
 }
 /* fine soluzione tablet */
 
@@ -234,6 +271,10 @@ section .container > div {
 
     #app-development{
         margin-top: 305px;
+    }
+
+    .row .col{
+        width: calc(100% / 3 - 30px);
     }
 
 }
