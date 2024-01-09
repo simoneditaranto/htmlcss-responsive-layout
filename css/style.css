@@ -196,8 +196,37 @@ header .container{
     border: 1px dotted green;
     /* test */
 }
-
 /* fine sezione "with-us" */
+
+
+
+/* sezione about-us */
+#about-us{
+    margin-bottom: 65px;
+}
+
+#about-us .container{
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+#top{
+    height: 150px;
+    border: 1px dotted green;
+    /* test */
+}
+
+#bot{
+    height: 100px;
+    border: 1px dotted green;
+    /* test */
+
+    margin-bottom: 80px;
+}
+
+/* fine sezione about-us */
+
 
 
 
@@ -243,6 +272,11 @@ header .container{
 
     .row .col{
         width: calc(100% / 2 - 30px);
+    }
+
+    #about-us .container{
+        flex-direction: row;
+        justify-content: center;
     }
 
 }
