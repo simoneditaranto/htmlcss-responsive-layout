@@ -4,3 +4,49 @@
     box-sizing: border-box;
 }
 /* reset */
+
+
+
+/* elementi comuni a tutta la pagina */
+.container{
+    border: 1px dotted blue;
+    margin: 0 30px;
+    /* test */
+
+
+}
+/* fine elementi comuni a tutta la pagina */
+
+
+
+
+/* sezione navbar */
+
+nav{
+    background-color: #0084FD;
+}
+
+nav .container{
+    height: 75px;
+    /* test */
+
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .logo{
+    width: 100px;
+    height: 100%;
+    border: 1px solid red;
+    /* test */
+}
+
+nav .menu{
+    width: 100px;
+    height: 100%;
+    border: 1px solid red;
+    /* test */
+}
+
+/* fine sezione navbar */
+
