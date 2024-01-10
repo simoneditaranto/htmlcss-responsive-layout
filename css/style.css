@@ -26,6 +26,16 @@ a{
     color: white;
     background-color: #0084FD;
 }
+
+/* immagini profilo */
+.testimonial{
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+    
+    object-fit: cover;
+}
 /* fine elementi comuni a tutta la pagina */
 
 
@@ -257,15 +267,6 @@ header .container{
     background-color: #9792E4;
 }
 
-.profile .testimonial{
-    width: 200px;
-    height: 200px;
-
-    border-radius: 50%;
-    
-    object-fit: cover;
-}
-
 .profile .profile-image img{
     width: 100%;
 }
@@ -354,21 +355,69 @@ header .container{
 
 #about-us .container{
     flex-direction: column;
-    gap: 55px;
+    gap: 60px;
 }
 
 #top{
-    height: 150px;
-    border: 1px dotted green;
-    /* test */
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#top h3{
+    font-size: 35px;
+
+    color: #9792E4;
+}
+
+#top p{
+    line-height: 30px;
 }
 
 #bot{
-    height: 100px;
-    border: 1px dotted green;
-    /* test */
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: flex-start;
+}
 
-    margin-bottom: 80px;
+#bot .testimonial {
+    position: relative;
+}
+
+#bot .testimonial i{
+    position: absolute;
+    right: 0;
+
+    font-size: 50px;
+
+    color: #9792E4;
+}
+
+#bot .testimonial img{
+    width: 100%;
+
+    border-radius: 50%;
+}
+
+#bot p{
+    line-height: 30px;
+
+    font-size: 20px;
+
+    color: #9792E4;
+}
+
+#bot a{
+    padding: 12px;
+
+    white-space: nowrap;
+
+    background-color: #9792E4;
+}
+
+#bot a span{
+    margin-right: 5px;
 }
 /* fine sezione about-us */
 
@@ -458,7 +507,6 @@ footer{
     /* sezione about-us */
     #about-us .container{
         flex-direction: row;
-        justify-content: center;
     }
     /* fine sezione about-us */
 
