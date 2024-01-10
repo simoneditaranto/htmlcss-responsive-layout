@@ -8,16 +8,30 @@
 
 
 /* elementi comuni a tutta la pagina */
+.container{
+    display: flex;
 
+    padding: 0 30px;
+}
 
+a{
+    text-decoration: none;
+}
 
+.btn{
+    padding: 10px 50px;
+
+    border-radius: 20px;
+
+    color: white;
+    background-color: #0084FD;
+}
 /* fine elementi comuni a tutta la pagina */
 
 
 
 
 /* sezione navbar */
-
 nav{
     padding: 0 30px;
     margin-bottom: 50px;
@@ -26,65 +40,88 @@ nav{
 }
 
 nav .container{
-    height: 75px;
-    /* test */
-
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 0;
 }
 
-nav .logo{
-    width: 100px;
-    height: 100%;
-    border: 1px solid red;
-    /* test */
-}
+nav .container i{
+    font-size: 20px;
 
-nav .menu{
-    width: 100px;
-    height: 100%;
-    border: 1px solid red;
-    /* test */
+    color: white;
 }
-
 /* fine sezione navbar */
 
 
 
 /* sezione header */
-
 header{
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-
-    padding: 0 30px;
     margin-bottom: 80px;
 }
 
-.card{
-    height: 200px;
-    border: 1px dotted red;
-    /* test */
+header .container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
 
+.card{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    gap: 35px;
+
+    padding: 35px;
+
+    border-radius: 16px;
+
+    text-align: center;
 
     background-color: #B5DDFF;
 }
 
+.card:nth-of-type(1){
+    padding: 35px 35px 0;
+}
+
 .card #text{
-    height: 100px;
-    border: 1px dotted purple;
-    /* test */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 35px;
+
+    text-align: start;
+}
+
+.card #text i{
+    margin-right: 10px;
+
+    font-size: 16px;
+
+    color: white;
 }
 
 .card #img{
-    height: 100px;
-    border: 1px dotted purple;
-    /* test */
+    display: flex;
+
+    width: 200px;
+}
+
+
+.card #img img{
+    width: 100%;
+}
+
+.card h3{
+    color: #0084FD;
+}
+
+.card i{
+    font-size: 80px;
+
+    color: #0084FD;
 }
 /* fine sezione header */
 
@@ -97,20 +134,22 @@ header{
     background-color: #9792E4;
 }
 
-#strategic-planning{
+#strategic-planning .container{
     display: flex;
     flex-direction: column;
+    gap: 35px;
 }
 
 #planning{
+    width: 100%;
+    height: 150px;
     border: 1px dotted purple;
     /* test */
-
-    margin-top: 70px;
-    margin-bottom: 35px;
 }
 
 #app-development{
+    width: 100%;
+    height: 150px;
     border: 1px dotted purple;
     /* test */
 
@@ -126,6 +165,10 @@ header{
 /* sezione "testimonials" */
 #testimonials{
     margin-bottom: 115px;
+}
+
+#testimonials .container{
+    flex-direction: column;
 }
 
 
@@ -172,11 +215,15 @@ header{
 
 
 /* sezione "with-us" */
-
 #with-us{
     margin-bottom: 90px;
 
     background-color: #9792E4;
+}
+
+#with-us .container{
+    flex-direction: column;
+    gap: 70px;
 }
 
 .row{
@@ -199,11 +246,12 @@ header{
 
 /* sezione about-us */
 #about-us{
-    display: flex;
+    margin-bottom: 65px;
+}
+
+#about-us .container{
     flex-direction: column;
     gap: 55px;
-
-    margin-bottom: 65px;
 }
 
 #top{
@@ -262,7 +310,7 @@ footer{
 /* soluzione tablet */
 @media screen and (min-width: 768px) {
 
-    header{
+    header .container{
         flex-direction: row;
         flex-wrap: wrap;
         gap: 25px;
@@ -277,14 +325,13 @@ footer{
         flex-grow: 2; 
     }
 
-    #planning{
-        margin-top: 140px;
-    }
-
+    /* sezione "testimonials" */
     #profiles .profile{
         flex-direction: row;
     }
+    /* fine sezione "testimonials" */
 
+    /* sezione "with-us" */
     .row{
         flex-direction: row;
         justify-content: center;
@@ -294,11 +341,16 @@ footer{
     .row .col{
         width: calc(100% / 2 - 30px);
     }
+    /* fine sezione "with-us" */
 
-    #about-us{
+    
+    /* sezione about-us */
+    #about-us .container{
         flex-direction: row;
         justify-content: center;
     }
+    /* fine sezione about-us */
+
 
 }
 /* fine soluzione tablet */
@@ -314,23 +366,21 @@ footer{
         justify-content: space-around;
     }
 
-    #strategic-planning{
+    /* sezione "strategic-planning */
+    #strategic-planning .container{
         flex-direction: row;
         justify-content: center;
-        gap: 90px;
+        /* gap: 90px; */
     }
+    /* fine sezione "strategic-planning */
 
-    #planning{
-        margin-bottom: 0;
-    }
 
-    #app-development{
-        margin-top: 305px;
-    }
-
+    /* sezione "with-us" */
     .row .col{
         width: calc(100% / 3 - 30px);
     }
+    /* fine sezione "with-us" */
+
 
 }
 /* soluzione laptop */
@@ -339,6 +389,10 @@ footer{
 
 /* soluzione desktop */
 @media screen and (min-width: 1200px) {
+
+    header .container{
+        padding: 0;
+    }
 
     .container{
         max-width: 1140px;
