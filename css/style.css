@@ -455,8 +455,6 @@ header .container{
     font-size: 30px;
 
     margin-bottom: 45px;
-
-    /* white-space: nowrap; */
 }
 
 #get-started .container h2{
@@ -465,8 +463,6 @@ header .container{
     font-size: 70px;
 
     margin-bottom: 45px;
-
-    /* white-space: nowrap; */
 }
 
 #get-started .container p{
@@ -513,10 +509,26 @@ header .container{
 
 /* footer */
 footer{
-    height: 200px;
-    /* test */
+    padding: 40px 0;
 
     background-color: #333333;
+
+    font-size: 12px;
+
+    text-align: center;
+
+    color: white;
+}
+
+footer .container{
+    flex-direction: column;
+    gap: 65px;
+}
+
+footer .container a{
+    text-decoration: underline;
+
+    color: #9792E4;
 }
 /* fine footer */
 
