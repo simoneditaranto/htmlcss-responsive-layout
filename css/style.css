@@ -48,9 +48,35 @@ nav .container{
 }
 
 nav .container i{
+    /* display: none; */
+
     font-size: 20px;
 
     color: white;
+}
+
+#links{
+    display: none;
+}
+
+#links ul{
+    display: flex;
+    gap: 30px;
+
+    list-style-type: none;
+}
+
+#links ul li a{
+    color: white;
+}
+
+#links ul li:last-child a{
+    padding: 8px 10px;
+
+    border-radius: 20px; 
+
+    color: black;
+    background-color: white;
 }
 /* fine sezione navbar */
 
@@ -359,6 +385,17 @@ footer{
 /* soluzione laptop */
 
 @media screen and (min-width: 992px) {
+
+    /* navbar */
+    nav .container i{
+        display: none;
+    }
+
+    #links{
+        display: block;
+    }
+    /* fine navbar */
+
 
 
     header .card:nth-of-type(1){
